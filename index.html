@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>自己紹介サイト</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="responsive.css">
+  <!-- animate.cssスタイルシート -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
+
+
+  <meta name="description" content="プログラミングを習い始めた人のウェブサイト。このサイトからアプリやウェブサイトをアップロードしていきます。">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <h1>My Site</h1>
+      </div>
+      <div class="fa fa-bars menu-icon"></div>
+      <div class="header-right">
+        <ul class="navi">
+          <li><a href="#">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#like">Like</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="my_photo">
+    <h1>Welcome to<br>My Self-introduction Site</h1>
+    <img src="./img/IMG_7890 .jpg">
+  </div>
+
+  <div class="self-introduction" id="profile">
+    <div class="greeting slide-bottom">
+      <h1>My name is Haruki Nakachi！</h1>
+      <p>こんにちわ！私の名前は仲地晴紀と言います。<br>今回は簡単ではありますが、自分の自己紹介サイトを作成しましたので宜しければ見て行って下さい。</p>
+    </div>
+    <div class="center">
+      <input type="checkbox" name="" id="checkbox">
+      <span id="on">プロフィールをOn</span>
+      <span id="off">プロフィールをOff</span>
+    </div>
+    <table>
+      <tr>
+        <th>名前</th>
+        <td>仲地 晴紀</td>
+        <th>職業</th>
+        <td>消防士</td>
+      </tr>
+      <tr>
+        <th>生年月日</th>
+        <td>平成元年11月4日</td>
+        <th>家族構成</th>
+        <td>嫁、子供（女の子）の3人家族です</td>
+      </tr>
+      <tr>
+        <th>年齢</th>
+        <td>30歳</td>
+        <th>趣味</th>
+        <td>プログラミング、サッカー鑑賞、お酒</td>
+      </tr>
+      <tr>
+        <th>血液型</th>
+        <td>B型</td>
+        <th>学んできた言語</th>
+        <td>HTML,CSS,Ruby,JavaScript,Jquery</td>
+      </tr>
+      <tr>
+        <th>性別</th>
+        <td>男</td>
+        <th>将来の目標</th>
+        <td>エンジニアになること！</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="favorite_things_pictures" id="like">
+    <div class="favorite_things">
+      <h1>My favorite things</h1>
+      <p>簡単ではありますが、自分の好きな○○を紹介します。</p>
+    </div>
+    <div class="pictures">
+      <div class="picture" id="block1">
+        <img class="slide-bottom" src="img/IMG_1711.JPG">
+        <h2> 食べ物</h2>
+        <p>
+          美味しい食べ物を食べると気分も上がるし、元気にもなれます。最近では外食に行くと写真を取るようにしています。食べ物の中でも一番好きなのは肉です。食べ過ぎると太るのでそこだけは気を付けてもっと美味しい食べ物を食べていきたいです。これは家族の写真です。これは家族の写真です。これは家族の写真です。これは家族の写真です。これは家族の写真です。
+        </p>
+      </div>
+      <div class="picture" id="block2">
+        <img class="slide-bottom" src="img/IMG_8271.JPG">
+        <h2> 子供</h2>
+        <p>
+          娘の望結（みゆ）です。年齢は１歳で、現在は保育園に通っています。休みの日は家で一緒に遊んだり、ご飯をあげたり、寝たりしています。子育てはとても大変ですが、それ以上にかわいいし一緒にいて癒されます。これは家族の写真です。これは家族の写真です。これは家族の写真です。
+        </p>
+      </div>
+      <div class="picture" id="block3">
+        <img class="slide-bottom" src="img/722286.jpg">
+        <h2> プログラミング</h2>
+        <p>
+          最初はプログラミングって難しいものだと思っていましたが、プログラミング学習アプリの「Progate」を通してプログラミングが面白いと感じるようになりました。今はほぼ毎日プログラミングをしていて、エンジニアになるために勉強しています。将来的には個人や企業のWebサイトを作ったり、自分でオリジナルWebアプリケーション、スマホアプリを開発することが目標です。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="my_portfolio_site" id="portfolio">
+    <div class="portfolio_introduction">
+      <h1>ポートフォリオの紹介 <i class="fas fa-laptop"></i></h1>
+      <p>Coming soon…（まだ出来上がっていませんので、下記のサイトを見ておいて下さい。）</p>
+    </div>
+    <div class="my_portfolios">
+      <div class="my_portfolio">
+        <img class="animated" src="img\amazon.jpg">
+        <h2><i class="fas fa-check-circle"></i> portfolio1</h2>
+        <p>
+          これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。
+        </p>
+      </div>
+      <div class="my_portfolio">
+        <img class="animated" src="img\google.png">
+        <h2><i class="fas fa-check-circle"></i> portfolio2</h2>
+        <p>
+          これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。
+        </p>
+      </div>
+      <div class="my_portfolio">
+        <img class="animated" src="img\Twitter.jpg">
+        <h2><i class="fas fa-check-circle"></i> portfolio3</h2>
+        <p>
+          これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。これはポートフォリオです。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="haruki">
+      <div class="sample">
+        <img src="img/IMG_7306_0430090041.png">
+        <h2>名前：仲地晴紀</h2>
+        <p>今はエンジニアへの転職を目指し勉強中。</p>
+        <div class="sns_box">
+          <div class="sns_button twitter">
+            <a href="###" title="Tweet"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="sns_button facebook">
+            <a href="###" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+          </div>
+          <div class="sns_button google">
+            <a href="###" title="google+"><i class="fab fa-google-plus"></i></a>
+          </div>
+          <div class="sns_button instagram">
+            <a href="###" title="Facebook"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="sns_button pocket">
+            <a href="###" title="pocket"><i class="fab fa-get-pocket"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact_form">
+      <h2>Contact Form</h2>
+      <p>コンタクトを取りたい方は下記からお願いします。</p>
+      <div class="row100">
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" name="" required="reauired">
+            <div class="text">first name</div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" name="" required="reauired">
+            <div class="text">last name</div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row100">
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" name="" required="reauired">
+            <div class="text">E-mail</div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="inputBox">
+            <input type="text" name="" required="reauired">
+            <div class="text">電話番号</div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row100">
+        <div class="col">
+          <div class="inputBox textarea">
+            <textarea required="required"></textarea>
+            <div class="text">メッセージ</div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="col" id="btn">
+            <input type="submit" value="send">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="jquery.fadethis.js"></script>
+  <script>$(window).fadeThis();</script>
+  <!-- ↓ズームイン↓ -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

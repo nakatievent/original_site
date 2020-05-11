@@ -1,0 +1,296 @@
+/* すべての要素に対して box-sizing: border-box; を指定してください */
+*{
+  box-sizing: border-box;
+}
+
+/* タブレット向けレイアウト */
+
+
+
+
+
+/* ブレイクポイントが1000px以下のときのメディアクエリを設定してください */
+@media (max-width:1000px) {
+  /* lessonクラスのCSSを指定してください */
+
+.header-left {
+  width: 100%;
+  margin: 0 auto;
+  /* text-align: center; */
+}  
+
+.my_photo {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.my_photo h1 {
+  position: absolute;
+  top: 80%;
+  right: 5%;
+  margin: auto;
+  font-size: 24px;
+}
+
+.my_photo img {
+  width: 12%;
+  position: absolute;
+  top: 62%;
+  right: 7%;
+}
+
+.self-introduction {
+  width: 100%;
+}
+
+.greeting h1 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.center {
+  width: 50%;
+}
+
+/* テーブルCSS */
+table {
+  width: 90%;
+  border-collapse:collapse;
+  margin:0 auto;
+}
+
+td,th {
+  border:1px solid #ccc;
+  padding:10px;
+  line-height: 50px;
+  word-wrap:break-word;
+}
+
+td {
+  text-align: center;
+  background: white;
+}
+
+th {
+  background:#EFEFEF;
+}
+
+.favorite_things_pictures {
+  width: 100%;
+}
+
+.favorite_things h1 {
+  display: inline-block;
+  margin: 0;
+  width: 300px;
+}
+
+.pictures {
+  flex-wrap: wrap;
+  }
+
+.picture {
+  width: 50%;
+}
+
+.my_portfolio_site {
+  width: 100%;
+}
+
+.portfolio_introduction h1 {
+  display: inline-block;
+}
+
+.my_portfolios {
+  flex-wrap: wrap;
+}
+  
+.my_portfolio {
+  width: 50%;
+}
+
+footer {
+  width: 100%;
+}
+
+footer {
+  flex-wrap: wrap;
+}
+
+.haruki {
+  width: 100%;
+}
+
+.sample {
+  margin: 50px auto;
+}
+
+.contact_form {
+  width: 100%;
+}
+
+.contact_form .row100 .col {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* header-rightクラスのdisplayをnoneに指定してください */
+.header-right {
+  display: none;
+}
+
+/* menu-iconクラスのdisplayをblockに指定してください  */
+.menu-icon {
+  display: block;
+}
+
+}
+
+/* スマホ向けレイアウト */
+
+/* ブレイクポイントが670px以下の時のメディアクエリを設定してください */
+@media (max-width:670px) {
+
+.header-left {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}  
+
+.my_photo {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  position: relative;
+}
+
+.my_photo h1 {
+  position: absolute;
+  top: 75%;
+  right: 5%;
+  margin: auto;
+  font-size: 24px;
+}
+
+.my_photo img {
+  width: 22%;
+  position: absolute;
+  top: 55%;
+  right: 10%;
+}
+
+.self-introduction {
+  width: 100%;
+}
+
+.greeting h1 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.center {
+  width: 80%;
+}
+
+table {
+  width: 95%;
+  border-collapse:collapse;
+  margin:0 auto;
+  text-align: center;
+}
+
+tr {
+  width: 100%;
+  text-align: center;
+}
+
+th {
+  display: inline-block;
+  width: 25%;
+  padding: 0;
+  height: 50px;
+  margin: auto;
+}
+
+td {
+  display: inline-block;
+  width: 75%;
+  text-align: center;
+  height: 50px;
+  padding: 0;
+}
+
+.favorite_things_pictures {
+  width: 100%;
+}
+
+.favorite_things h1 {
+  width: 80%;
+}
+
+.pictures {
+  flex-wrap: wrap;
+  }
+
+.picture {
+  width: 100%;
+}
+
+.my_portfolio_site {
+  width: 100%;
+}
+
+.portfolio_introduction h1 {
+  width: 300px;
+
+}
+
+.my_portfolios {
+  flex-wrap: wrap;
+  }
+  
+.my_portfolio {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+footer {
+  flex-wrap: wrap;
+}
+
+.haruki {
+  width: 100%;
+}
+
+.sample {
+  margin: 50px auto;
+}
+
+.contact_form {
+  width: 100%;
+}
+
+.contact_form .row100 .col {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* header-rightクラスのdisplayをnoneに指定してください */
+.header-right {
+  display: none;
+}
+
+/* menu-iconクラスのdisplayをblockに指定してください  */
+.menu-icon {
+  display: block;
+}
+
+/* <footer>の中身を中央寄せにしてください。 */
+
+}

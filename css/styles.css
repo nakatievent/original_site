@@ -1,0 +1,631 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy; 
+}
+
+li {
+  list-style: none;
+}
+
+/* ここからはヘッダー部分のCSS */
+header {
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+}
+
+.header-left {
+  width: 300px;
+  margin-left: 40px;
+}
+
+.header-left h1 {
+  line-height: 60px;
+  margin: 0;
+}
+
+.header-right {
+  width: 100%;
+}
+
+.navi {
+  margin: 0;
+  line-height: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navi li {
+  font-size: 20px;
+  padding: 0 30px;
+  outline: none;
+}
+
+.navi li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navi li a:hover {
+  color: red;
+  padding: 0px 30;
+}
+
+.navi li:active {
+  background-color: red;
+  color: black;
+  padding: 0px 30;
+}
+
+/* メニューアイコン */
+.menu-icon {
+  color: black;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display: none;
+}
+
+/* ここからはヘッダー下の画像CSS */
+.my_photo {
+  width: 90%;
+  height: 500px;
+  background-image: url(../img/IMG_5086.JPG);
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+}
+
+.my_photo h1 {
+  color: white;
+  -webkit-text-stroke: 2px rgb(54, 41, 41);
+  position: absolute;
+  top: 72%;
+  right: 2%;
+}
+
+.my_photo img {
+  /* width: 15%; */
+  width: 11%;
+  border-radius: 50%;
+  border: 2px solid rgb(218, 62, 210);
+  position: absolute;
+  top: 55%;
+  right: 4%;
+}
+
+/* ここからは自己紹介CSS */
+.self-introduction {
+ width: 90%;
+ margin: 0 auto;
+ padding: 50px 0;
+ /* background: -moz-linear-gradient(top right, rgb(199, 193, 181), #FFF); 
+ background: -webkit-linear-gradient(top right, rgb(199, 193, 181), #FFF);  */
+ background: linear-gradient(to bottom right, #FFF, rgb(177, 168, 155));
+}
+
+.self-introduction p {
+  width: 90%;
+  font-size: 15px;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+/* プロフィールのオン・オフ */
+.center {
+  transform-style: preserve-3d;
+  perspective: 200px;
+  border: 2px solid #000;
+  width: 350px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  box-sizing: content-box;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 350px;
+  height: 40px;
+  margin: 0;
+  -webkit-appearance: none;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+span {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+span:nth-child(2) {
+  left: 0;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: #0f0;
+}
+
+span:nth-child(2):before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f00, #de0808);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  transform-origin: right;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+input[type ="checkbox"]:checked ~ span:nth-child(2):before {
+  transform: rotateY(180deg);
+}
+
+span:nth-child(3) {
+  right: 0;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #f00;
+}
+
+span:nth-child(3):before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #0cd20c, #0f0);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transform-origin: left;
+  transition: 1s;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+input[type ="checkbox"]:checked ~ span:nth-child(3):before {
+  transform: rotateY(360deg);
+}
+
+.greeting {
+  text-align: center;
+}
+
+.greeting h1 {
+  margin: 0;
+}
+
+/* テーブルCSS */
+table {
+  width: 90%;
+  border-collapse:collapse;
+  margin:0 auto;
+}
+
+td,th {
+  border:1px solid #ccc;
+  padding:10px;
+  line-height: 50px;
+  word-wrap:break-word;
+}
+
+td {
+  text-align: center;
+  background: white;
+}
+
+th {
+  background:#EFEFEF;
+}
+
+.like {
+  width: 90%;
+  height: 300px;
+  background-color: green;
+  margin: 0 auto;
+}
+
+/* 好きなもの・人の画像 */
+.favorite_things_pictures {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: -moz-linear-gradient(top left, #FFF, #FFC778); 
+  background: -webkit-linear-gradient(top left, #FFF, #FFC778); 
+  background: linear-gradient(to bottom right, #FFF, #FFC778);
+}
+
+.favorite_things {
+  text-align: center;
+}
+
+.favorite_things h1 {
+  margin: 0 auto;
+  position: relative;
+  padding: 0.25em 0;
+  width: 25%;
+}
+
+.favorite_things p {
+  width: 90%;
+  font-size: 15px;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.favorite_things h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}
+
+.pictures {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.picture {
+  width: 33%;
+}
+
+.picture img {
+  width: 90%;
+  height: 250px;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.picture h2 {
+  border-bottom: double 5px rgb(216, 49, 99);
+  display: inline-block;
+}
+
+.picture h2:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1b0";/*アイコンのユニコード*/
+  font-size: 1em;/*サイズ*/
+  color: #978bff; /*アイコン色*/
+}
+
+.picture p {
+  width: 90%;
+  font-size: 15px;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* ポートフォリオの紹介 */
+.my_portfolio_site {
+  width :90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  /* background: -moz-linear-gradient(top left, #FFF, #FFC778); 
+  background: -webkit-linear-gradient(top left, #FFF, #FFC778);  */
+  background: linear-gradient(to bottom right, #FFF, rgb(157, 201, 148));
+}
+
+.my_portfolio_site h1 {
+  margin: 0;
+}
+
+.my_portfolio_site p{
+  width: 90%;
+  font-size: 15px;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+.fa-laptop {
+  color: blue;
+}
+
+.portfolio_introduction {
+  text-align: center;
+}
+
+.portfolio_introduction h1 {
+  border-bottom: solid 3px skyblue;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio_introduction h1:first-letter {
+  font-size: 1.5em;
+  color: #db1515;
+}
+
+.portfolio_introduction h1:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #ffc778;
+  bottom: -3px;
+  width: 30%;
+}
+
+.my_portfolios {
+  display: flex;
+  justify-content: space-around;
+  text-align: center; 
+
+}
+
+.my_portfolio {
+  margin-top: 50px;
+}
+
+.my_portfolio img{
+  width: 90%;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 25px;
+
+}
+
+.fa-check-circle {
+  color: rgb(38, 0, 255);
+}
+
+.my_portfolio p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+/* フッター */
+footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* background: #03080a; */
+  /* min-height: 100vh; */
+  background: linear-gradient(to bottom right, #FFF, rgb(82, 53, 212));
+}
+
+.sample {
+  text-align: center;
+}
+
+.sample img {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* コンタクトフォーム */
+.contact_form {
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact_form h2 {
+  /* color: #45f3ff; */
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact_form p {
+  /* color: #45f3ff; */
+  text-align: center;
+}
+
+.contact_form .row100 {
+  position: relative;
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+}
+
+.contact_form .row100 .col {
+  position: relative;
+  /* width: 100%; */
+  padding: 0 70px;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+
+.contact_form .row100 .inputBox {
+  position: relative;
+  /* width: 100%; */
+  height: 40px;
+  /* color: #45f3ff; */
+}
+
+.contact_form .row100 .inputBox input,
+.contact_form .row100 .inputBox.textarea textarea{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  /* padding: 0 10px; */
+  /* 重なりの順番↓ */
+  z-index: 1;
+  color: #000;
+}
+
+.contact_form .row100 .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.contact_form .row100 .inputBox input:focus + .text,.contact_form .row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.contact_form .row100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(84, 128, 90);
+  /* background-color: black; */
+  transition: 0.5s;
+  border-radius: 2px;
+  /* pointer-events: none; */
+}
+
+.contact_form .row100 .inputBox input:focus ~ .line,.contact_form .row100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.contact_form .row100 .inputBox.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.contact_form .row100 .inputBox.textarea textarea {
+  height: 80%;
+  resize: none;
+}
+
+.contact_form .row100 .inputBox textarea:focus + .text,.contact_form .row100 .inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.contact_form .row100 .inputBox textarea:focus ~ .line,.contact_form .row100 .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(84, 128, 90);
+  color: white;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+#btn {
+  margin: 50px auto;
+}
+
+/* フッター画像 */
+.haruki {
+  width:50%;
+  margin: auto;
+  position: relative;
+}
+
+.sns_box {
+  position: absolute;
+  overflow: hidden;
+  /* top: 0;
+  bottom: 0; */
+  left: 50%;
+  /* -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); */
+  transform: translateX(-50%);
+  margin: auto;
+  height: 44px;
+  min-width: 268px;
+}
+
+.sns_button {
+  float: left;
+  box-shadow: inset 0 0 0 2px #fff;
+  border-radius: 100%;
+  -moz-transition: all 280ms ease;
+  -o-transition: all 280ms ease;
+  -webkit-transition: all 280ms ease;
+  transition: all 280ms ease;
+}
+.sns_button a {
+  display: table-cell;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  -moz-transition: all 280ms ease;
+  -o-transition: all 280ms ease;
+  -webkit-transition: all 280ms ease;
+  transition: all 280ms ease;
+}
+.sns_button i {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.sns_button:hover {
+  box-shadow: inset 0 0 0 22px #fff;
+}
+
+.sns_button + .sns_button {
+  margin: 0 0 0 12px;
+}
+
+.twitter:hover a {
+  color: #1B95E0;
+}
+
+.facebook:hover a {
+  color: #3B5999;
+}
+
+.google:hover a {
+  color: #dd4b39;
+}
+
+.instagram:hover a {
+  color: #2b5c84;
+}
+
+.pocket:hover a {
+  color: #EE4056;
+}
